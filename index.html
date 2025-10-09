@@ -52,7 +52,7 @@ I am currently a second-year MS Robotics student at UC San Diego, working in <a 
                   <strong>Programming Languages:</strong> Python, C++, MATLAB
                 </p>
                 <p>
-                  <strong>Tools and Libraries:</strong> Gazebo, ROS2, CopeliaSim, IsaacGym MuJoCo, GTSAM, OMPL, CasADi, PyTorch, SolidWorks, Ansys, 
+                  <strong>Tools and Libraries:</strong> Gazebo, ROS2, CopeliaSim, IsaacGym, MuJoCo, GTSAM, OMPL, CasADi, PyTorch, SolidWorks, Ansys
                 </p>
               </td>
             </tr>
@@ -65,9 +65,41 @@ I am currently a second-year MS Robotics student at UC San Diego, working in <a 
               <tr>
               <td style="padding:16px;width:100%;vertical-align:middle">
                 <h2>Experience</h2>
-                
+
                 <p>
-                  <strong>Graduate Student Researcher, ERL Lab, UCSD</strong><br>
+                  <strong>Software Engineering Intern, <a href="https://www.braincorp.com/" target="_blank" rel="noopener">BrainCorp</a></strong><br>
+                  
+                  <strong>Vision-Language-Models (VLM) based Global Localization for warehouses | Python</strong>
+                </p>
+                <ul>
+                  <li style="display:flex;align-items:center;margin-bottom:15px;">
+                    <div style="margin-right:15px;flex-shrink:0;">
+                      <video width="200" height="120" controls style="border-radius:6px;box-shadow: 0 2px 8px rgba(0,0,0,0.1);" onclick="this.requestFullscreen && this.requestFullscreen();">
+                        <source src="images/vlm_semantic_mapping_demo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                    <div>
+                      Developed a VLM-based semantic mapping and particle filter localization system for robust long-term operation in dynamic environments, eliminating manual homing during delocalization or cold starts
+                      
+                    </div>
+                  </li>
+                  <li style="display:flex;align-items:center;margin-bottom:15px;">
+                    <div style="margin-right:15px;flex-shrink:0;">
+                      <video width="200" height="120" controls style="border-radius:6px;box-shadow: 0 2px 8px rgba(0,0,0,0.1);" onclick="this.requestFullscreen && this.requestFullscreen();">
+                        <source src="images/warehouse_localization_results.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                    <div>
+                      Achieved 95% localization accuracy (distance error <4m) across 10,000m² warehouse using 1-month-old semantic maps, converging in 12 m of robot motion
+                      
+                    </div>
+                  </li>
+                </ul>
+
+                <p>
+                  <strong>Graduate Student Researcher, <a href="https://erl.ucsd.edu/" target="_blank" rel="noopener">ERL Lab</a>, UCSD</strong><br>
                   
                   <strong>Manipulation and Control | Isaac Gym, CopeliaSim</strong>
                 </p>
@@ -98,40 +130,10 @@ I am currently a second-year MS Robotics student at UC San Diego, working in <a 
                   </li>
                 </ul>
 
-                <p>
-                  <strong>Software Engineering Intern, BrainCorp</strong><br>
-                  
-                  <strong>Vision-Language-Models (VLM) based Global Localization for warehouses | Python</strong>
-                </p>
-                <ul>
-                  <li style="display:flex;align-items:center;margin-bottom:15px;">
-                    <div style="margin-right:15px;flex-shrink:0;">
-                      <video width="200" height="120" controls style="border-radius:6px;box-shadow: 0 2px 8px rgba(0,0,0,0.1);" onclick="this.requestFullscreen && this.requestFullscreen();">
-                        <source src="images/vlm_semantic_mapping_demo.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-                      </video>
-      </div>
-                    <div>
-                      Developed a VLM-based semantic mapping and particle filter localization system for robust long-term operation in dynamic environments, eliminating manual homing during delocalization or cold starts
-                      
-      </div>
-                  </li>
-                  <li style="display:flex;align-items:center;margin-bottom:15px;">
-                    <div style="margin-right:15px;flex-shrink:0;">
-                      <video width="200" height="120" controls style="border-radius:6px;box-shadow: 0 2px 8px rgba(0,0,0,0.1);" onclick="this.requestFullscreen && this.requestFullscreen();">
-                        <source src="images/warehouse_localization_results.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-                      </video>
-      </div>
-                    <div>
-                      Achieved 95% localization accuracy (distance error <4m) across 10,000m² warehouse using 1-month-old semantic maps, converging in 12 m of robot motion
-                      
-					</div>
-                  </li>
-                </ul>
+                
 
                 <p>
-                  <strong>Senior Robotics Software Engineer, General Aeronautics (GA)</strong><br>
+                  <strong>Senior Robotics Software Engineer, <a href="https://generalaeronautics.com/" target="_blank" rel="noopener">General Aeronautics (GA)</a></strong><br>
                   
                 </p>
                 <ul>
@@ -322,6 +324,61 @@ I am currently a second-year MS Robotics student at UC San Diego, working in <a 
           closeLightbox(e);
         }
       });
+
+      // Keyword highlighter (DOM-safe: modifies text nodes only)
+      (function() {
+        var terms = [
+          'SLAM','LiDAR','visual-inertial','GTSAM','ICP','EKF','RANSAC',
+          'MPPI','CasADi','GPI','OMPL','A*','PRM','RRT','youBot',
+          'CoppeliaSim','Isaac Gym','MuJoCo','ROS2','PyTorch','CNN',
+          'ResNet','DenseNet','U-Net','FCN-8s','FCN-32s','CamVid',
+          'CIFAR-10','CIFAR-100','particle filter','VLM','xArm6',
+          'obstacle avoidance','regression testing','flight stability'
+        ];
+        function esc(s){return s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');}
+        var rx = new RegExp('(?:^|\\b)(' + terms.map(esc).join('|') + ')(?=\\b)','gi');
+        var SKIP = {SCRIPT:1, STYLE:1, A:1, VIDEO:1, IMG:1, SOURCE:1, BUTTON:1};
+        function walk(node){
+          if(node.nodeType===3){
+            var t=node.nodeValue; if(!rx.test(t)) return; rx.lastIndex=0;
+            var frag=document.createDocumentFragment(), last=0, m;
+            while((m=rx.exec(t))){
+              if(m.index>last) frag.appendChild(document.createTextNode(t.slice(last,m.index)));
+              var span=document.createElement('span'); span.className='highlight'; span.textContent=m[1];
+              frag.appendChild(span); last=rx.lastIndex;
+            }
+            if(last<t.length) frag.appendChild(document.createTextNode(t.slice(last)));
+            node.parentNode.replaceChild(frag,node); return;
+          }
+          if(node.nodeType===1 && !SKIP[node.tagName]){
+            for(var i=0;i<node.childNodes.length;i++) walk(node.childNodes[i]);
+          }
+        }
+        // Limit to Experience and Projects sections only
+        var experienceHeader = Array.prototype.slice.call(document.querySelectorAll('h2'))
+          .find(function(h){ return h.textContent.trim().toLowerCase()==='experience'; });
+        var projectsHeader = Array.prototype.slice.call(document.querySelectorAll('h2'))
+          .find(function(h){ return h.textContent.trim().toLowerCase()==='projects'; });
+
+        var scopes = [];
+        if (experienceHeader) {
+          var expContainer = experienceHeader.parentNode;
+          // include following sibling content within the same table cell
+          scopes.push(expContainer);
+        }
+        if (projectsHeader) {
+          var projContainer = projectsHeader.parentNode;
+          scopes.push(projContainer);
+        }
+
+        // For each container, walk paragraphs and list description divs
+        var nodes = [];
+        for (var s=0; s<scopes.length; s++) {
+          nodes = nodes.concat(Array.prototype.slice.call(scopes[s].querySelectorAll('p, li > div')));
+        }
+        for(var i=0;i<nodes.length;i++) walk(nodes[i]);
+        for(var s=0;s<scopes.length;s++) walk(scopes[s]);
+      })();
                 </script>
   </body>
 </html>
