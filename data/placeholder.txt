@@ -1,0 +1,6 @@
+# Data Directory
+
+Place your CV here as "MihirSalot-CV.pdf" for the CV link on the main page.
+
+You can also add other documents and files here as needed.
+
