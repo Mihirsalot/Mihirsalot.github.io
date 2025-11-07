@@ -23,11 +23,9 @@
                   Mihir Salot
                 </p>
                 <p>
-                  I have 4 years of experience developing perception, control, and navigation algorithms for drones, warehouse robots, and robotic arms. My interests include perception, control, motion planning, and manipulation.
+                  I have 4 years of experience developing perception, control, and navigation algorithms across platforms including drones, warehouse robots, and robotic arms. 
                 </p>
-                <p>
-                  
-I am currently a second-year MS Robotics student at UC San Diego, working in <a href="https://natanaso.github.io/">Prof. Nikolay Atanasov's lab</a> on developing algorithms for contact-rich manipulation using xArm6 robot.
+                <p>I am currently a second-year MS Robotics student at UC San Diego, working in <a href="https://natanaso.github.io/">Professor Nikolay Atanasov's lab</a> on algorithms for contact-rich manipulation using the xArm6 robot.
                 </p>
                 <p style="text-align:center">
                   <a href="docs/CV.pdf" target="_blank">CV</a> &nbsp;/&nbsp;
@@ -237,6 +235,17 @@ I am currently a second-year MS Robotics student at UC San Diego, working in <a 
                       <a href="https://github.com/Mihirsalot/ECE-276c/tree/main/PR1" target="_blank" rel="noopener">[Code]</a>
                     </div>
                   </li>
+                  <li style="display:flex;align-items:center;margin-bottom:15px;">
+                    <div style="margin-right:15px;flex-shrink:0;">
+                      <video width="200" height="120" controls style="border-radius:6px;box-shadow: 0 2px 8px rgba(0,0,0,0.1);" onclick="this.requestFullscreen && this.requestFullscreen();">
+                        <source src="images/stiffness_control.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                    <div>
+                      Derived 3-DOF manipulator dynamics using Euler-Lagrange Equations; implemented gravity-compensated stiffness control for stable Cartesian trajectory tracking with dynamic external forcing handling
+                    </div>
+                  </li>
                 </ul>
 
                 <p>
@@ -350,7 +359,8 @@ I am currently a second-year MS Robotics student at UC San Diego, working in <a 
           'CoppeliaSim','Isaac Gym','MuJoCo','ROS2','PyTorch','CNN',
           'ResNet','DenseNet','U-Net','FCN-8s','FCN-32s','CamVid',
           'CIFAR-10','CIFAR-100','particle filter','VLM','xArm6',
-          'obstacle avoidance','regression testing','flight stability'
+          'obstacle avoidance','regression testing','flight stability',
+          'Euler-Lagrange','gravity-compensated','stiffness control','3-DOF','manipulator dynamics'
         ];
         function esc(s){return s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');}
         var rx = new RegExp('(?:^|\\b)(' + terms.map(esc).join('|') + ')(?=\\b)','gi');
