@@ -246,6 +246,21 @@
                       Derived 3-DOF manipulator dynamics using Euler-Lagrange Equations; implemented gravity-compensated stiffness control for stable Cartesian trajectory tracking with dynamic external forcing handling
                     </div>
                   </li>
+                  <li style="display:flex;align-items:center;margin-bottom:15px;">
+                    <div style="margin-right:15px;flex-shrink:0;display:flex;flex-direction:column;gap:8px;">
+                      <video width="200" height="120" controls style="border-radius:6px;box-shadow: 0 2px 8px rgba(0,0,0,0.1);" onclick="this.requestFullscreen && this.requestFullscreen();">
+                        <source src="images/276c_projects/Visual_servoing_robot_animation.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                      <a href="#" onclick="openLightbox('images/276c_projects/Visual_servoing.gif'); return false;">
+                        <img src="images/276c_projects/Visual_servoing.gif" alt="Visual Servoing GIF" style="width:200px;height:120px;object-fit:cover;border-radius:6px;box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+                      </a>
+                    </div>
+                    <div>
+                      Implemented eye-in-hand Image-Based Visual Servoing (IBVS) using image Jacobian-based control for object tracking with a Franka Panda 7-DOF robot arm
+                      <a href="https://github.com/Mihirsalot/ECE-276c/tree/main/PR3" target="_blank" rel="noopener">[Code]</a>
+                    </div>
+                  </li>
                 </ul>
 
                 <p>
@@ -360,7 +375,8 @@
           'ResNet','DenseNet','U-Net','FCN-8s','FCN-32s','CamVid',
           'CIFAR-10','CIFAR-100','particle filter','VLM','xArm6',
           'obstacle avoidance','regression testing','flight stability',
-          'Euler-Lagrange','gravity-compensated','stiffness control','3-DOF','manipulator dynamics'
+          'Euler-Lagrange','gravity-compensated','stiffness control','3-DOF','manipulator dynamics',
+          'visual servoing','IBVS','eye-in-hand','7-DOF','Franka Panda'
         ];
         function esc(s){return s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');}
         var rx = new RegExp('(?:^|\\b)(' + terms.map(esc).join('|') + ')(?=\\b)','gi');
