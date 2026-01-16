@@ -187,6 +187,17 @@
                 <ul>
                   <li style="display:flex;align-items:center;margin-bottom:15px;">
                     <div style="margin-right:15px;flex-shrink:0;">
+                      <video width="200" height="120" controls style="border-radius:6px;box-shadow: 0 2px 8px rgba(0,0,0,0.1);" onclick="this.requestFullscreen && this.requestFullscreen();">
+                        <source src="images/Carla.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                    <div>
+                      Implemented collision checker and velocity planner using polynomial spiral optimization for autonomous navigation
+                    </div>
+                  </li>
+                  <li style="display:flex;align-items:center;margin-bottom:15px;">
+                    <div style="margin-right:15px;flex-shrink:0;">
                       <a href="#" onclick="openLightbox('images/Lidar_slam.png'); return false;">
                         <img src="images/Lidar_slam.png" alt="LiDAR SLAM Demo" style="width:200px;height:120px;object-fit:cover;border-radius:6px;box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
                       </a>
